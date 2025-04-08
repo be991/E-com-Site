@@ -24,9 +24,9 @@ const LatestCollection = () => {
       
      {/* Rendering Products */}
      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6'>
-  {latestProducts.map((item) => (
+  {latestProducts.map((item,index) => (
     <ProductItem
-      key={1} // Added the key prop here
+      key={index} // Added the key prop here
       id={item.id}
       image={item.image}
       name={item.name}
